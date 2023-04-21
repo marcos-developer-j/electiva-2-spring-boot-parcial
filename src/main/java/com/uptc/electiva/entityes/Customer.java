@@ -80,9 +80,7 @@ public class Customer {
 			result+= bill.getTotal();
 		}
 		return result;
-		
 	}
-	
 	
 }
 

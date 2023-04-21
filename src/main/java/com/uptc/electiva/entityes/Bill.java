@@ -24,7 +24,9 @@ public class Bill {
     @ManyToOne(fetch = FetchType.LAZY)
     @JsonIgnore
 	private Customer customer;
-
+    private Bill() {
+    	
+    }
 	public Bill(String number, LocalDate date_bill, TypePay type_pay,Double total, Customer customer) {
 		super();
 		this.number = number;

@@ -16,7 +16,7 @@ public class Bill {
 	private LocalDate date_bill;
     
     @Enumerated(EnumType.STRING)
-	private TypePay type_bill;
+	private TypePay typePay;
     
     @Column(nullable = false)
     private Double total;
@@ -25,11 +25,11 @@ public class Bill {
     @JsonIgnore
 	private Customer customer;
 
-	public Bill(String number, LocalDate date_bill, TypePay type_bill,Double total, Customer customer) {
+	public Bill(String number, LocalDate date_bill, TypePay type_pay,Double total, Customer customer) {
 		super();
 		this.number = number;
 		this.date_bill = date_bill;
-		this.type_bill = type_bill;
+		this.typePay = type_pay;
 		this.customer = customer;
 		this.total=total;
 	}
@@ -58,12 +58,12 @@ public class Bill {
 		this.date_bill = date_bill;
 	}
 
-	public TypePay getType_bill() {
-		return type_bill;
+	public TypePay getType_pay() {
+		return typePay;
 	}
 
-	public void setType_bill(TypePay type_bill) {
-		this.type_bill = type_bill;
+	public void setType_bill(TypePay type_pay) {
+		this.typePay = type_pay;
 	}
 
 	public Customer getCustomer() {
@@ -76,7 +76,7 @@ public class Bill {
 
 	@Override
 	public String toString() {
-		return "Bill [number=" + number + ", date_bill=" + date_bill + ", type_bill=" + type_bill + ", customer="
+		return "Bill [number=" + number + ", date_bill=" + date_bill + ", type_bill=" + typePay + ", customer="
 				+ customer + "]";
 	}
     

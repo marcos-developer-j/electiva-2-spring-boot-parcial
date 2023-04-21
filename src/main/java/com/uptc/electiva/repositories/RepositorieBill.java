@@ -10,5 +10,5 @@ import com.uptc.electiva.entityes.TypePay;
 
 @Repository
 public interface RepositorieBill extends JpaRepository<Bill, String> {
-	List<Bill> findByTypePay(TypePay type_pay);
+	List<Bill> findByTypePay(TypePay typePay);
 }

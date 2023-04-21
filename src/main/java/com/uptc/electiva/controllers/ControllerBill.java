@@ -85,8 +85,8 @@ public class ControllerBill {
             	if(bill.getTotal()!=null) {
             		updatedBill.setTotal(bill.getTotal());
             	};
-            	if(bill.getType_bill()!=null) {
-            		updatedBill.setType_bill(bill.getType_bill());
+            	if(bill.getType_pay()!=null) {
+            		updatedBill.setType_bill(bill.getType_pay());
             	};
             	if(bill.getCustomer()!=null) {
             		updatedBill.setCustomer(bill.getCustomer());
